@@ -9,7 +9,7 @@
 }
 /* content */
 .wrapper .content {
-    padding:50px;
+    padding:5px;
     text-align:center;
 }
 .wrapper .content .heading{
@@ -20,7 +20,7 @@
 }
 
  .wrapper{
-    background-image: url(../images/DSC_4757.JPG) ;
+    background-image: url(../images/whistler4.JPG) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
