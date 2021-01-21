@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSEのフォトギャラリー</title>
+    <meta name="description" content="小田急沿線に住む管理人がひたすら小田急の写真を投稿するサイト">
+    <meta name="keywords" content="LSE,小田急,フォトギャラリー">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="path/to/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="sytlesheet" href="js/7000f.js">
+    <!-- <link rel="sytlesheet" href="js/change_language.js"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+
+</head>
+
+<!-- 言語の変更 -->
+<script>
+    window.onload = function() {
+      var language;
+
+      if (navigator.browserLanguage != null) {
+        // Internet Explorer, Opera, 他
+        language = navigator.browserLanguage.substr(0, 2);
+      } else if(navigator.userLanguage != null) {
+        // Internet Explorerの場合
+        language = navigator.userLanguage.substr(0, 2);
+      } else if(navigator.language != null) {
+        // Chrome, Firefox, Opera, 他
+        language = navigator.language.substr(0, 2);
+      } else {
+        // その他
+        language = "en";
+      }
+
+      setLanguage(language);
+    }
+
+    function setLanguage(language){
+      var element = document.getElementsByClassName("langageClass");
+      for (var i = 0; i < element.length; i++) {
+        if(element[i].getAttribute("lang") == language){
+          element[i].style.display = "";
+        }
+        else{
+          element[i].style.display = "none";
+        }
+      }
+    }
+</script>
+
+<body>
+    <script src="path/to/lightbox.js"></script>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="far fa-images mr-1"></i>LSE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index_message.html">Message</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index_about_me.html">About me</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="jumbotron">
+            <h1 class="langageClass" lang="ja"><i class="fas fa-camera-retro"></i>フォトギャラリー</h1>
+            <h1 class="langageClass" lang="en"><i class="fas fa-camera-retro"></i> Photo gallery</h1>
+            <p class="langageClass" lang="ja">小田急ロマンスカーLSEのフォトギャラリーをご覧ください。</p>
+            <p class="langageClass" lang="en">Please take a look for Odakyu Romance-car LSE.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="img-thumbnail">
+                    <a href="images/DSC_1278.JPG" data-lightbox="demo" data-title="Between Mukougaoka-yuen to Ikuta"><img src="images/DSC_1278.JPG"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="img-thumbnail">
+                    <a href="images/DSC_1323.JPG" data-lightbox="demo" data-title="Between Tamagawa-gakuen-mae to Machida"><img src="images/DSC_1323.JPG" alt=""/></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="img-thumbnail">
+                    <a href="images/DSC_5032.JPG" data-lightbox="demo" data-title="My caption"><img src="images/DSC_5032.JPG"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="img-thumbnail">
+                    <a href="images/DSC_5114.JPG" data-lightbox="demo" data-title="My caption"><img src="images/DSC_5114.JPG"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="img-thumbnail">
+                    <a href="images/DSC_5569.JPG" data-lightbox="demo" data-title="Between Shinyurigaoka"><img src="images/DSC_5569.JPG"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="img-thumbnail">
+                    <a href="images/DSC_5948.JPG" data-lightbox="demo" data-title="At Atsugi"><img src="images/DSC_5948.JPG" alt="ｻﾖｰﾅﾗｺﾛﾅ"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="img-thumbnail">
+                    <a href="images/DSC_7294.JPG" data-lightbox="demo" data-title="Between Tamagawa-gakuen-mae to Machida"><img src="images/DSC_7294.JPG"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="img-thumbnail">
+                    <a href="images/DSC_7684.JPG" data-lightbox="demo" data-title="My caption"><img src="images/DSC_7684.JPG"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="img-thumbnail">
+                    <a href="images/DSC_7894.JPG" data-lightbox="demo" data-title="Between Shibusawa to Shinmatsuda"><img src="images/DSC_7894.JPG"></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/31168af8af.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.21.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

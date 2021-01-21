@@ -1,0 +1,77 @@
+<head>
+    <link rel="stylesheet" href="css/index_message.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<!-- 言語の変更 -->
+<script>
+    window.onload = function() {
+      var language;
+
+      if (navigator.browserLanguage != null) {
+        // Internet Explorer, Opera, 他
+        language = navigator.browserLanguage.substr(0, 2);
+      } else if(navigator.userLanguage != null) {
+        // Internet Explorerの場合
+        language = navigator.userLanguage.substr(0, 2);
+      } else if(navigator.language != null) {
+        // Chrome, Firefox, Opera, 他
+        language = navigator.language.substr(0, 2);
+      } else {
+        // その他
+        language = "en";
+      }
+
+      setLanguage(language);
+    }
+
+    function setLanguage(language){
+      var element = document.getElementsByClassName("langageClass");
+      for (var i = 0; i < element.length; i++) {
+        if(element[i].getAttribute("lang") == language){
+          element[i].style.display = "";
+        }
+        else{
+          element[i].style.display = "none";
+        }
+      }
+    }
+</script>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><i class="far fa-images mr-1"></i>LSE</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="index_message.html">Message</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="index_about_me.html">About me</a>
+                  </li>
+
+              </ul>
+          </div>
+      </div>
+  </nav>
+<section class="wrapper">
+    <div class="bkRGBA">
+        <div class="container">
+            <div class="content">
+
+                    <h2 class="heading">MESSAGE</h2>
+                    <p class="langageClass" lang="ja">当サイトは自己満足な写真を載せてるだけですので、小田急への問い合わせはご遠慮ください。</p>
+                    <p class="langageClass" lang="en">Please don't ask to Odakyu company why this site is self-satisfaction pictures. </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</body>
